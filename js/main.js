@@ -29,13 +29,13 @@ imgs.forEach((img, index) => {
         let content = "";
         let glasses = dataGlasses[index];
         content = ` <img id="${glasses.id}"  src="${glasses.virtualImg}" alt="" > `;
-        content1 = ` <h5 style="margin-bottom: 5px;">${glasses.name}-${glasses.brand}(${glasses.color})</h5>
+        content1 = ` <h5>${glasses.name}-${glasses.brand}(${glasses.color})</h5>
        <button class="btn btn-danger">${glasses.price}</button> <Span style="color: green; margin-left: 15px;">Stocking</Span>
-       <p style="margin-top: 15px;">${glasses.description}</p>`;
+       <p>${glasses.description}</p>`;
         document.getElementById("avatar").innerHTML = content;
         document.getElementById("glassesInfo").innerHTML = content1;
-        document.getElementById("glassesInfo").classList.add('animate__animated')
-        document.getElementById("glassesInfo").classList.add('animate__fadeInUp')
+        document.getElementById("glassesInfo").classList.add('animate__animated')  
+        document.getElementById("glassesInfo").classList.add('animate__fadeInUp')  
         document.getElementById("glassesInfo").style.display = "block";
     });
 });
